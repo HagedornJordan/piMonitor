@@ -9,7 +9,7 @@ const RefreshButton = (props) => {
   const [items, setItems] = useState(0);
 
   const getResults = async () => {
-    const res = await fetch("http://192.168.86.25:8080/api/airQuality");
+    const res = await fetch("http://216.49.121.239:8000/api/airQuality");
     const data = await res.json();
     console.log(data.data);
     setItems(data);
