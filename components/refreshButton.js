@@ -26,7 +26,7 @@ return (
       <ul>
                 {
                     items && items.data.map(item => (
-                      <li> {item.date + sp + item.temperature + sp + item.pressure + sp +item.humidity + sp + item.gas + "ohm"} </li>
+                      <li key={item.date}> {item.date + sp + item.temperature + sp + item.pressure + sp +item.humidity + sp + item.gas + "ohm"} </li>
                     ))
                 }
             </ul>
